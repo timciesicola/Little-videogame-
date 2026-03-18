@@ -1,51 +1,83 @@
 # Little-videogame- 🎮
 
-A simple **Hangman** game you can run straight from your terminal / Windows CMD.
+A simple **Hangman** game that runs directly in your Windows CMD or terminal.
 
 ---
 
-## Requirements
+## ✅ Step 1 — Make sure Python is installed
 
-* **Python 3** – already installed on most systems.  
-  Check with: `python --version` (Windows) or `python3 --version` (Mac/Linux).
+Open CMD (Windows) or Terminal (Mac/Linux) and type:
+
+```
+python --version
+```
+
+You should see something like `Python 3.x.x`.  
+If you get an error, download Python for free at **https://www.python.org/downloads/** and install it.
 
 ---
 
-## How to play
+## ✅ Step 2 — Save the game file
 
-### Option A – run the file you cloned
+**What to copy:** the file [`game.py`](game.py) in this repository.
+
+Here is exactly what to do:
+
+1. Click on **`game.py`** at the top of this page (or [click here](game.py)).
+2. Click the **Raw** button (top-right of the file view) — you will see plain text code.
+3. Press **Ctrl + A** (select all), then **Ctrl + C** (copy).
+4. Open **Notepad** (Windows) or any plain text editor.
+5. Press **Ctrl + V** to paste.
+6. Save the file as **`game.py`** — for example, save it on your Desktop.
+
+> ⚠️ Make sure Notepad saves it as `game.py` and **not** `game.py.txt`.  
+> In Notepad → "Save As" → change "Save as type" to **All Files (\*.\*)** → type `game.py` → Save.
+
+---
+
+## ✅ Step 3 — Open CMD in the same folder
+
+**On Windows:**
+
+1. Open the folder where you saved `game.py` (e.g. the Desktop).
+2. Click the address bar at the top of the folder window.
+3. Type `cmd` and press **Enter** — a black CMD window opens in that folder.
+
+**On Mac / Linux:**
+
+Open Terminal, then type `cd` followed by the path to the folder, for example:
+```
+cd ~/Desktop
+```
+
+---
+
+## ✅ Step 4 — Run the game
+
+Type this **exactly** into CMD and press **Enter**:
 
 ```
 python game.py
 ```
 
-*(On Mac / Linux use `python3 game.py`)*
+> On Mac or Linux, use `python3 game.py` if `python` does not work.
 
-### Option B – copy & paste into CMD
-
-1. Open `game.py` in any text editor.
-2. Select all the text and copy it.
-3. Open a CMD / terminal window.
-4. Start a Python session:
-   ```
-   python
-   ```
-5. Paste the code and press **Enter** (or **Ctrl+D** on Mac/Linux to send EOF).
+The game will start immediately! 🎮
 
 ---
 
-## Rules
+## 🎮 How to play
 
 | | |
 |---|---|
-| 🔤 | Guess the hidden word one **letter at a time**. |
+| 🔤 | A secret word is hidden. Guess it **one letter at a time**. |
 | ❌ | You get **6 wrong guesses** before the man is hanged. |
-| ✅ | Reveal every letter to win! |
-| 🚪 | Type `quit` at any time to exit. |
+| ✅ | Reveal every letter in the word to win! |
+| 🚪 | Type `quit` and press Enter at any time to exit. |
 
 ---
 
-## Preview
+## 📺 What it looks like
 
 ```
 ============================================
